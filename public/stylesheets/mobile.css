@@ -1,0 +1,78 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.nav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+z-index: 100;
+}
+.menu {
+    margin: 0 30px 0 0;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    margin: 0 10px;
+    line-height: 70px;
+    text-transform: capitalize;
+}
+.white-menu a{
+    color: white;
+}
+label {
+    margin: 0 10px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+#toggle-auth {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+        text-transform: capitalize;
+        color: black;
+    }
+    #toggle:checked + .menu {
+        display: block;
+        background-color: white;
+        padding: 10px;
+    }
+    #toggle-auth:checked + .menu {
+        display: block;
+        background-color: white;
+        padding: 10px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
